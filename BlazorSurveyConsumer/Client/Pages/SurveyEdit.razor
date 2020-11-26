@@ -1,0 +1,13 @@
+﻿@page "/surveyeditor" 
+<h3>SurveyEdit</h3>
+
+<EditSurvey SelectedSurvey="survey"></EditSurvey>
+
+@code {
+	private Survey survey;
+	protected async override Task OnInitializedAsync()
+	{
+		await base.OnInitializedAsync();
+		survey = new Survey();
+	}
+}
